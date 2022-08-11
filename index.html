@@ -7,6 +7,15 @@
     <meta property="og:title" content="로사단 멤버 - 살두">
     <meta property="og:description" content="로사단 유튜브 관리자이자 멤버 살두입니다.">
     <meta property="og:image" content="https://cdn.discordapp.com/attachments/719829065564946542/1007196396413263932/1.png">
+    <meta name="og:site_name" content="Pawn Guild"></meta>
+    <meta property="og:title" content="{{ pawn.name }}">
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Level {{ pawn.level }} {{ pawn.vocation }}"></meta>
+    <!-- <meta name="theme-color" content="#91ee91"> -->
+
+{% if pawn.picture %}
+    <meta property="og:image" content="{{ pawn.picture.url }}" >
+{% endif %}
     <title>로사단 멤버 - 살두</title>
     <style>
         @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
